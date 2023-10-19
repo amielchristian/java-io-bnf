@@ -6,36 +6,40 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
+import static java.util.Collections.list;
+import java.util.Scanner;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.ParseTree;
 
 public class InputOutputBNF {
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        ArrayList<String> list = inputChecker();
-        for (int i = 0; i < list.size(); i++)   {
-            System.out.println(list.get(i));
-        }
+        inputChecker();
         // outputChecker();
     }
     
-    public static ArrayList inputChecker() throws FileNotFoundException, IOException  {
+    public static void inputChecker() throws FileNotFoundException, IOException  {
         File inputCases = new File("Input Cases.txt");
         BufferedReader br = new BufferedReader(new FileReader(inputCases));
         
-        ArrayList<String> list = new ArrayList<>();
-        String str;
-        while ((str = br.readLine()) != null)	{
-            Boolean valid;
-            valid = str.contains("\\V");
+        boolean stopper = false;
+        while (!stopper)    {
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter input statement (enter 0 to stop): ");
+            String str = sc.nextLine();
+            if (str.equals("0"))    {
+                stopper = true;
+                break;
+            }
+            
+            Boolean valid = str.contains("\\V");
             str = str.replace("\\V", "");
             str = str.replace("\\I", "");
-            
+
             CharStream input = CharStreams.fromString(str);
             InputLexer lexer = new InputLexer(input);
             CommonTokenStream tokens = new CommonTokenStream(lexer);
             InputParser parser = new InputParser(tokens);
-            ParseTree tree = parser.scanner_declaration(); // replace with your start rule
+            ParseTree tree = parser.input_statement();
 
             String msg = "";
             if (parser.getNumberOfSyntaxErrors() == 0)  {
@@ -50,9 +54,9 @@ public class InputOutputBNF {
                     msg = msg+"it should be.";
                 }
             }
-            list.add(msg);
+
+            System.out.println(msg);
         }
-        return list;
     }
     
     public static void outputChecker() throws FileNotFoundException, IOException  {
