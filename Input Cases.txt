@@ -1,0 +1,34 @@
+int input = new Scanner(System.in).nextInt(); \V
+int input = new Scanner(System.in).nextInt(10); \V
+int input = new Scanner(file).nextInt(); \V
+Scanner input = new Scanner(System.in); int x = input.nextInt(); \V
+Scanner input = new Scanner(System.in); x = input.nextInt(); \V
+Scanner input = new Scanner(System.in); integer = input.nextInt(); \V
+Scanner scanner = new Scanner(file); double num = scanner.nextDouble(); \V
+Scanner sc = new Scanner(System.in); int number = sc.nextInt(); \V
+Scanner sc = new Scanner(System.in); double number = sc.nextDouble(); \V
+Scanner sc = new Scanner(System.in); String text = sc.nextLine(); \V
+Scanner sc = new Scanner(System.in); boolean b = sc.nextBoolean(); \V
+Scanner sc = new Scanner(System.in); String word = sc.next(); \V
+Scanner sc = new Scanner(System.in); int x = sc.nextInt(10); \V
+Scanner sc = new Scanner(System.in); double d = sc.nextDouble(16); \V
+Scanner sc = new Scanner(System.in); long l = sc.nextLong(8); \V
+Scanner sc = new Scanner(System.in); short s = sc.nextShort(2); \V
+Scanner sc = new Scanner(System.in); byte b = sc.nextByte(5); \V
+int i = (new java.util.Scanner(System.in)).nextInt(); \V
+Scanner sc = new Scanner(System.in); int 123Name = sc.nextInt();  \I
+Scanner sc = new Scanner(System.in); int -abcdef = sc.nextInt();  \I
+Scanner sc = new Scanner(System.in); float temperature°Celsius = sc.nextFloat();  \I
+Scanner sc = new Scanner(System.in); Int a-c = sc.nextInt();  \I
+Scanner sc = new Scanner(System.in); int hello+me = sc.nextInt();  \I
+Scanner sc = new Scanner(System.in); String  name = sc.nextLine(); \I
+Scanner sc = new Scanner(System.in); int = scanner.nextInt();  \I
+Scanner sc = new Scanner(System.in); int var = sc.nextLine();  \I
+Scanner sc = new Scanner(System.in); int var = sc.next();  \I
+Scanner sc = new Scanner(System.in); String var = sc.nextInt();  \I
+Scanner sc = new Scanner(System.in); String var = sc.nextFloat();  \I
+Scanner sc = new Scanner(System.in); int x = sc.nextDouble();  \I
+String str = sc.nextLine(1); Scanner sc = new Scanner(System.in); \I
+Scanner sc = new Scanner(System.in); int var = sc.nextVariable(); \I
+Scanner sc = new Scanner(System.in); int var = sc.nextint(); \I
+Scanner sc =  java.util.Scanner(Scanner) new; \I
