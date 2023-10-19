@@ -1,7 +1,6 @@
 grammar Input;
 
 // LEXER
-CLASS : 'File' | 'FileInputStream' | 'BufferedReader' | 'PrintWriter' | 'InputStreamReader' | 'DataInputStream' | 'RandomAccessFile' | 'CharArrayReader' | 'StringBufferInputStream' | 'LineNumberReader' | 'StreamTokenizer' | 'FilterReader' | 'FilterInputStream' | 'PipedReader' | 'PushbackReader' ;
 SCANNER_CLASS : 'Scanner' ;
 SYSTEM_IN : 'System.in' ;
 INPUT_METHOD : 'nextInt' | 'nextDouble' | 'nextFloat' | 'nextLine' | 'next' | 'nextBoolean' | 'nextByte' | 'nextShort' | 'nextLong' ;
@@ -19,7 +18,6 @@ solitary_input_expression: variable_declaration '=' new_scanner '.' INPUT_METHOD
 new_scanner: 'new' package '(' (variable_name | SYSTEM_IN) ')' ;
 
 package: 'java.util.'? SCANNER_CLASS ;
-class_instance : 'new' CLASS '(' (STRING | variable_name | CLASS_INSTANCE | EPSILON) ')' ;
 radix : num | EPSILON | variable_name ;
 variable_declaration: DATA_TYPE? variable_name ;
 variable_name: (special_char | LETTER) (num|LETTER|special_char)* ;
