@@ -8,7 +8,7 @@ import org.antlr.v4.runtime.tree.ParseTree;
 
 public class InputOutputBNF {
     public static void main(String[] args) throws FileNotFoundException, IOException  {
-        // inputChecker();
+        //inputChecker();
         outputChecker();
     }
     
