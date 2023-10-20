@@ -17,7 +17,7 @@ character : LETTER | SYMBOL | DIGIT ;
 character_literal : '\'' character '\'' ;
 boolean_literal : '!'? ('(' BOOLEAN ')' | BOOLEAN) ;
 string_content : character character* ;
-string_literal : (primary_expression '+')* '"' string_content '"' ('+' primary_expression)* ;
+string_literal : (primary_expression '+')* '"' string_content? '"' ('+' primary_expression)* ;
 primary_expression : variable | boolean_literal | character_literal | method_statement | arithmetic_operations | array_index ;
 number_operator : '-'? (integer_literal | floating_point_literal | variable) ;
 arithmetic_operations : '-'? ('(' number_operator ')' | number_operator) (( '-' | '+' | '*' | '/' | '%') (number_operator | '(' number_operator ')'))* ;
@@ -32,5 +32,5 @@ program : statements ;
 statements : output_statement output_statement* ;
 output_statement : print_statement ';' ;
 print_statement :  object_instance  ( '.print(' expressions ')'
-                                    | '.println(' expressions ')'
-                                    | '.printf(' format_string (',' format_arguments)? ')' ) ;
+                                    | '.println(' expressions? ')'
+                                    | '.printf(' format_string ( ',' format_arguments)?  ')' ) ;

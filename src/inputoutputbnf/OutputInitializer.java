@@ -12,7 +12,7 @@ import org.antlr.v4.Tool;
  */
 public class OutputInitializer {
     public static void main(String[] args)  {
-        String[] antlrArgs = {"-visitor", "-package", "inputoutputbnf", "Output.g4"};
+        String[] antlrArgs = {"-visitor", "-package", "inputoutputbnf", "-o", "src/inputoutputbnf/output", "Output.g4"};
         Tool.main(antlrArgs);
     }
 }
