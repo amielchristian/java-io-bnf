@@ -2,7 +2,6 @@ package inputoutputbnf;
 
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.*;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.ParseTree;
@@ -12,29 +11,26 @@ public class InputOutputBNF {
         JFrame f = new JFrame("Input/Output Checker");
         JPanel p1 = new JPanel(); JPanel p2 = new JPanel(); JPanel p3 = new JPanel();
 
-        JTextField textField = new JTextField(20);
+        JTextField textField = new JTextField(40);
         JButton button = new JButton("Test");
         JLabel result = new JLabel();
         
         JRadioButton rbInput = new JRadioButton("Input");
-        rbInput.setSelected(true);
         JRadioButton rbOutput = new JRadioButton("Output");
         ButtonGroup buttonGroup = new ButtonGroup();
         buttonGroup.add(rbInput);
         buttonGroup.add(rbOutput);
+        rbInput.setSelected(true);
         
-        button.addActionListener( new ActionListener()    {
-            @Override
-            public void actionPerformed(ActionEvent e)  {
-                String input = textField.getText();
-                String msg = "";
-                if (rbInput.isSelected())
-                    msg = inputChecker(input);
-                else if (rbOutput.isSelected())
-                    msg = outputChecker(input);
-                
-                result.setText(msg);
-            }
+        button.addActionListener((ActionEvent e) -> {
+            String input = textField.getText();
+            String msg = "";
+            if (rbInput.isSelected())
+                msg = inputChecker(input);
+            else if (rbOutput.isSelected())
+                msg = outputChecker(input);
+            
+            result.setText(msg);
         });
 
         f.setLayout(new GridLayout(3,1));
@@ -46,16 +42,12 @@ public class InputOutputBNF {
         f.add(p1);
         f.add(p2);
         f.add(p3);
-        f.setSize(300, 150);
+        f.setSize(500, 150);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
     }
     
     public static String inputChecker(String str)  {
-        Boolean valid = str.contains("\\V");
-        str = str.replace("\\V", "");
-        str = str.replace("\\I", "");
-
         CharStream input = CharStreams.fromString(str);
         InputLexer lexer = new InputLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
@@ -65,22 +57,14 @@ public class InputOutputBNF {
         String msg = "";
         if (parser.getNumberOfSyntaxErrors() == 0)  {
             msg = "Covered. ";
-            if (!valid)
-                msg = msg+"It shouldn't be.";
         }
         else    {
             msg = "Not covered. ";
-            if (valid)
-                msg = msg+"It should be.";
         }
         return msg;
     }
-    
-    public static String outputChecker(String str)  {
-        Boolean valid = str.contains("\\V");
-        str = str.replace("\\V", "");
-        str = str.replace("\\I", "");
 
+    public static String outputChecker(String str)  {
         CharStream input = CharStreams.fromString(str);
         OutputLexer lexer = new OutputLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
@@ -90,14 +74,11 @@ public class InputOutputBNF {
         String msg = "";
         if (parser.getNumberOfSyntaxErrors() == 0)  {
             msg = "Covered. ";
-            if (!valid)
-                msg = msg+"It shouldn't be.";
         }
         else    {
             msg = "Not covered. ";
-            if (valid)
-                msg = msg+"It should be.";
         }
         return msg;
     }
 }
+

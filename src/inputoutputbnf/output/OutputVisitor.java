@@ -11,6 +11,30 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  */
 public interface OutputVisitor<T> extends ParseTreeVisitor<T> {
 	/**
+	 * Visit a parse tree produced by {@link OutputParser#program}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitProgram(OutputParser.ProgramContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link OutputParser#statements}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitStatements(OutputParser.StatementsContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link OutputParser#output_statement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOutput_statement(OutputParser.Output_statementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link OutputParser#print_statement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPrint_statement(OutputParser.Print_statementContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link OutputParser#identifier_chars}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -52,6 +76,12 @@ public interface OutputVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitBoolean_literal(OutputParser.Boolean_literalContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link OutputParser#string}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitString(OutputParser.StringContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link OutputParser#string_content}.
 	 * @param ctx the parse tree
@@ -112,28 +142,4 @@ public interface OutputVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitFormat_string(OutputParser.Format_stringContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link OutputParser#program}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitProgram(OutputParser.ProgramContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link OutputParser#statements}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitStatements(OutputParser.StatementsContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link OutputParser#output_statement}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitOutput_statement(OutputParser.Output_statementContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link OutputParser#print_statement}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitPrint_statement(OutputParser.Print_statementContext ctx);
 }

@@ -8,6 +8,46 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface OutputListener extends ParseTreeListener {
 	/**
+	 * Enter a parse tree produced by {@link OutputParser#program}.
+	 * @param ctx the parse tree
+	 */
+	void enterProgram(OutputParser.ProgramContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link OutputParser#program}.
+	 * @param ctx the parse tree
+	 */
+	void exitProgram(OutputParser.ProgramContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link OutputParser#statements}.
+	 * @param ctx the parse tree
+	 */
+	void enterStatements(OutputParser.StatementsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link OutputParser#statements}.
+	 * @param ctx the parse tree
+	 */
+	void exitStatements(OutputParser.StatementsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link OutputParser#output_statement}.
+	 * @param ctx the parse tree
+	 */
+	void enterOutput_statement(OutputParser.Output_statementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link OutputParser#output_statement}.
+	 * @param ctx the parse tree
+	 */
+	void exitOutput_statement(OutputParser.Output_statementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link OutputParser#print_statement}.
+	 * @param ctx the parse tree
+	 */
+	void enterPrint_statement(OutputParser.Print_statementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link OutputParser#print_statement}.
+	 * @param ctx the parse tree
+	 */
+	void exitPrint_statement(OutputParser.Print_statementContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link OutputParser#identifier_chars}.
 	 * @param ctx the parse tree
 	 */
@@ -77,6 +117,16 @@ public interface OutputListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitBoolean_literal(OutputParser.Boolean_literalContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link OutputParser#string}.
+	 * @param ctx the parse tree
+	 */
+	void enterString(OutputParser.StringContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link OutputParser#string}.
+	 * @param ctx the parse tree
+	 */
+	void exitString(OutputParser.StringContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link OutputParser#string_content}.
 	 * @param ctx the parse tree
@@ -177,44 +227,4 @@ public interface OutputListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitFormat_string(OutputParser.Format_stringContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link OutputParser#program}.
-	 * @param ctx the parse tree
-	 */
-	void enterProgram(OutputParser.ProgramContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link OutputParser#program}.
-	 * @param ctx the parse tree
-	 */
-	void exitProgram(OutputParser.ProgramContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link OutputParser#statements}.
-	 * @param ctx the parse tree
-	 */
-	void enterStatements(OutputParser.StatementsContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link OutputParser#statements}.
-	 * @param ctx the parse tree
-	 */
-	void exitStatements(OutputParser.StatementsContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link OutputParser#output_statement}.
-	 * @param ctx the parse tree
-	 */
-	void enterOutput_statement(OutputParser.Output_statementContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link OutputParser#output_statement}.
-	 * @param ctx the parse tree
-	 */
-	void exitOutput_statement(OutputParser.Output_statementContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link OutputParser#print_statement}.
-	 * @param ctx the parse tree
-	 */
-	void enterPrint_statement(OutputParser.Print_statementContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link OutputParser#print_statement}.
-	 * @param ctx the parse tree
-	 */
-	void exitPrint_statement(OutputParser.Print_statementContext ctx);
 }
