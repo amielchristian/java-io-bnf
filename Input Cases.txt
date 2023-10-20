@@ -32,3 +32,6 @@ String str = sc.nextLine(1); Scanner sc = new Scanner(System.in); \I
 Scanner sc = new Scanner(System.in); int var = sc.nextVariable(); \I
 Scanner sc = new Scanner(System.in); int var = sc.nextint(); \I
 Scanner sc =  java.util.Scanner(Scanner) new; \I
+Scanner sc =  java.util.Scanner(Scanner) new; \I
+Scanner sc =  java.util.scanner(system.in) new; \I
+Scanner sc =  java.util.scanner(System.in) new; \I

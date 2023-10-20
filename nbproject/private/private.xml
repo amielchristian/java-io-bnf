@@ -8,5 +8,12 @@
             <file>file:/D:/Documents/GitHub/InputOutputBNF/src/inputoutputbnf/OutputInitializer.java</file>
             <file>file:/D:/Documents/GitHub/InputOutputBNF/src/inputoutputbnf/InputInitializer.java</file>
         </group>
+        <group name="2ND YEAR">
+            <file>file:/C:/Users/Patricia%20Denise/Documents/GitHub/InputOutputBNF/Output.g4</file>
+            <file>file:/C:/Users/Patricia%20Denise/Documents/GitHub/InputOutputBNF/src/inputoutputbnf/OutputInitializer.java</file>
+            <file>file:/C:/Users/Patricia%20Denise/Documents/GitHub/InputOutputBNF/src/inputoutputbnf/InputOutputBNF.java</file>
+            <file>file:/C:/Users/Patricia%20Denise/Documents/GitHub/InputOutputBNF/Input%20Cases.txt</file>
+            <file>file:/C:/Users/Patricia%20Denise/Documents/GitHub/InputOutputBNF/Output%20Cases.txt</file>
+        </group>
     </open-files>
 </project-private>
