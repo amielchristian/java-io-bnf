@@ -1,17 +1,14 @@
 package inputoutputbnf;
 
-import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import javax.swing.*;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.ParseTree;
 
 public class InputOutputBNF {
-    public static void main(String[] args) throws FileNotFoundException, IOException  {
+    public static void main(String[] args)  {
         JFrame f = new JFrame("Input/Output Checker");
         JPanel p1 = new JPanel(); JPanel p2 = new JPanel(); JPanel p3 = new JPanel();
 
