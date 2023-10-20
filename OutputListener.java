@@ -188,16 +188,6 @@ public interface OutputListener extends ParseTreeListener {
 	 */
 	void exitProgram(OutputParser.ProgramContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link OutputParser#statements}.
-	 * @param ctx the parse tree
-	 */
-	void enterStatements(OutputParser.StatementsContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link OutputParser#statements}.
-	 * @param ctx the parse tree
-	 */
-	void exitStatements(OutputParser.StatementsContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link OutputParser#output_statement}.
 	 * @param ctx the parse tree
 	 */

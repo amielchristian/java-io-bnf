@@ -119,12 +119,6 @@ public interface OutputVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitProgram(OutputParser.ProgramContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link OutputParser#statements}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitStatements(OutputParser.StatementsContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link OutputParser#output_statement}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
