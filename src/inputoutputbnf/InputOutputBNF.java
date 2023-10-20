@@ -9,9 +9,9 @@ import org.antlr.v4.runtime.tree.ParseTree;
 public class InputOutputBNF {
     public static void main(String[] args)  {
         JFrame f = new JFrame("Input/Output Checker");
-        JPanel p1 = new JPanel(); JPanel p2 = new JPanel(); JPanel p3 = new JPanel();
+        JPanel p1 = new JPanel(); JPanel p2 = new JPanel(); JPanel p3 = new JPanel(); JPanel p4 = new JPanel();
 
-        JTextField textField = new JTextField(40);
+        JTextArea textField = new JTextArea(5,40);
         JButton button = new JButton("Test");
         JLabel result = new JLabel();
         
@@ -33,16 +33,17 @@ public class InputOutputBNF {
             result.setText(msg);
         });
 
-        f.setLayout(new GridLayout(3,1));
+        f.setLayout(new GridLayout(4,1));
         p1.add(textField);
-        p1.add(button);
-        p2.add(rbInput);
-        p2.add(rbOutput);
-        p3.add(result);
+        p2.add(button);
+        p3.add(rbInput);
+        p3.add(rbOutput);
+        p4.add(result);
         f.add(p1);
         f.add(p2);
         f.add(p3);
-        f.setSize(500, 150);
+        f.add(p4);
+        f.setSize(500, 200);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
     }
