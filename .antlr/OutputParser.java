@@ -1,5 +1,4 @@
-// Generated from Output.g4 by ANTLR 4.13.1
-package inputoutputbnf;
+// Generated from d:/Documents/GitHub/InputOutputBNF/Output.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -49,9 +48,9 @@ public class OutputParser extends Parser {
 			null, "';'", "'.print('", "')'", "'.println('", "'.printf('", "','", 
 			"'.'", "'~'", "'!'", "'@'", "'#'", "'$'", "'^'", "'&'", "'*'", "'('", 
 			"'_'", "'{'", "'}'", "'['", "']'", "'|'", "'\\'", "':'", "'\"'", "'''", 
-			"'<'", "'>'", "'?'", "'\\u03B5'", "' '", "'-'", "'+'", "'='", "'/'", 
-			"'%'", "'()'", "'%s'", "'%S'", "'%c'", "'%C'", "'%b'", "'%B'", "'%d'", 
-			"'%f'", "'%n'", null, null, null, null, null, null, "'System.out'"
+			"'<'", "'>'", "'?'", "'\\u00CE\\u00B5'", "' '", "'-'", "'+'", "'='", 
+			"'/'", "'%'", "'()'", "'%s'", "'%S'", "'%c'", "'%C'", "'%b'", "'%B'", 
+			"'%d'", "'%f'", "'%n'", null, null, null, null, null, null, "'System.out'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
@@ -124,19 +123,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_program; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterProgram(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitProgram(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitProgram(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final ProgramContext program() throws RecognitionException {
@@ -172,19 +158,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_statements; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterStatements(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitStatements(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitStatements(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final StatementsContext statements() throws RecognitionException {
@@ -232,19 +205,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_output_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterOutput_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitOutput_statement(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitOutput_statement(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Output_statementContext output_statement() throws RecognitionException {
@@ -289,19 +249,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_print_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterPrint_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitPrint_statement(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitPrint_statement(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Print_statementContext print_statement() throws RecognitionException {
@@ -408,19 +355,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_identifier_chars; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterIdentifier_chars(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitIdentifier_chars(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitIdentifier_chars(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Identifier_charsContext identifier_chars() throws RecognitionException {
@@ -463,19 +397,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_floating_point_literal; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterFloating_point_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitFloating_point_literal(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitFloating_point_literal(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Floating_point_literalContext floating_point_literal() throws RecognitionException {
@@ -589,19 +510,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_integer_literal; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterInteger_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitInteger_literal(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitInteger_literal(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Integer_literalContext integer_literal() throws RecognitionException {
@@ -654,19 +562,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_variable; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterVariable(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitVariable(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitVariable(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final VariableContext variable() throws RecognitionException {
@@ -723,19 +618,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_character; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterCharacter(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitCharacter(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitCharacter(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final CharacterContext character() throws RecognitionException {
@@ -777,19 +659,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_character_literal; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterCharacter_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitCharacter_literal(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitCharacter_literal(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Character_literalContext character_literal() throws RecognitionException {
@@ -824,19 +693,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_boolean_literal; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterBoolean_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitBoolean_literal(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitBoolean_literal(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Boolean_literalContext boolean_literal() throws RecognitionException {
@@ -909,19 +765,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_string; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterString(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitString(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitString(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final StringContext string() throws RecognitionException {
@@ -982,19 +825,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_string_content; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterString_content(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitString_content(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitString_content(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final String_contentContext string_content() throws RecognitionException {
@@ -1049,19 +879,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_string_literal; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterString_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitString_literal(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitString_literal(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final String_literalContext string_literal() throws RecognitionException {
@@ -1165,19 +982,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_primary_expression; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterPrimary_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitPrimary_expression(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitPrimary_expression(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Primary_expressionContext primary_expression() throws RecognitionException {
@@ -1264,19 +1068,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_number_operator; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterNumber_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitNumber_operator(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitNumber_operator(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Number_operatorContext number_operator() throws RecognitionException {
@@ -1346,19 +1137,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_arithmetic_operations; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterArithmetic_operations(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitArithmetic_operations(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitArithmetic_operations(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Arithmetic_operationsContext arithmetic_operations() throws RecognitionException {
@@ -1497,19 +1275,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_method_statement; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterMethod_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitMethod_statement(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitMethod_statement(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Method_statementContext method_statement() throws RecognitionException {
@@ -1571,19 +1336,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_array_index; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterArray_index(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitArray_index(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitArray_index(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Array_indexContext array_index() throws RecognitionException {
@@ -1644,19 +1396,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expressions; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterExpressions(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitExpressions(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitExpressions(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final ExpressionsContext expressions() throws RecognitionException {
@@ -1727,19 +1466,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_format_arguments; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterFormat_arguments(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitFormat_arguments(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitFormat_arguments(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Format_argumentsContext format_arguments() throws RecognitionException {
@@ -1798,19 +1524,6 @@ public class OutputParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_format_string; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).enterFormat_string(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof OutputListener ) ((OutputListener)listener).exitFormat_string(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof OutputVisitor ) return ((OutputVisitor<? extends T>)visitor).visitFormat_string(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final Format_stringContext format_string() throws RecognitionException {

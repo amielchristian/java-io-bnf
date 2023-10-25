@@ -2,18 +2,19 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/Documents/GitHub/InputOutputBNF/src/inputoutputbnf/InputOutputBNF.java</file>
-            <file>file:/D:/Documents/GitHub/InputOutputBNF/Input%20Cases.txt</file>
-            <file>file:/D:/Documents/GitHub/InputOutputBNF/src/inputoutputbnf/OutputInitializer.java</file>
-            <file>file:/D:/Documents/GitHub/InputOutputBNF/src/inputoutputbnf/InputInitializer.java</file>
-        </group>
         <group name="2ND YEAR">
             <file>file:/C:/Users/Patricia%20Denise/Documents/GitHub/InputOutputBNF/Output.g4</file>
             <file>file:/C:/Users/Patricia%20Denise/Documents/GitHub/InputOutputBNF/src/inputoutputbnf/OutputInitializer.java</file>
             <file>file:/C:/Users/Patricia%20Denise/Documents/GitHub/InputOutputBNF/src/inputoutputbnf/InputOutputBNF.java</file>
             <file>file:/C:/Users/Patricia%20Denise/Documents/GitHub/InputOutputBNF/Input%20Cases.txt</file>
             <file>file:/C:/Users/Patricia%20Denise/Documents/GitHub/InputOutputBNF/Output%20Cases.txt</file>
+        </group>
+        <group>
+            <file>file:/D:/Documents/GitHub/InputOutputBNF/src/inputoutputbnf/InputOutputBNF.java</file>
+            <file>file:/D:/Documents/GitHub/InputOutputBNF/src/inputoutputbnf/OutputInitializer.java</file>
+            <file>file:/D:/Documents/GitHub/InputOutputBNF/Input.g4</file>
+            <file>file:/D:/Documents/GitHub/InputOutputBNF/src/inputoutputbnf/InputInitializer.java</file>
+            <file>file:/D:/Documents/GitHub/InputOutputBNF/Output.g4</file>
         </group>
     </open-files>
 </project-private>
