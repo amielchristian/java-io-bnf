@@ -1,21 +1,54 @@
 grammar Output;
 
 // LEXER
-DIGIT : [0-9]+ ;
-LETTER : [a-zA-Z] ;
-SYMBOL : '~' | '!' | '@' | '#' | '$' | '^' | '&' | '*' | '(' | ')' | '_' | '{' | '}' | '[' | ']' | '|' | '\\' | ':' | ';' | '"' | '\'' | '<' | '>' | ',' | '.' | '?' | 'ε' | ' ' ;
-OPERATORS: '-' | '+' | '=' | '/' | '%' ;
-SPECIAL_CHAR : '_' | '$' ;
-BOOLEAN : 'true' | 'false' ;
-OBJECT_INSTANCE : 'System.out' ;
+DIGIT: [0-9]+;
+LETTER: [a-zA-Z];
+SYMBOL:
+	'~'
+	| '!'
+	| '@'
+	| '#'
+	| '$'
+	| '^'
+	| '&'
+	| '*'
+	| '('
+	| ')'
+	| '_'
+	| '{'
+	| '}'
+	| '['
+	| ']'
+	| '|'
+	| '\\'
+	| ':'
+	| ';'
+	| '"'
+	| '\''
+	| '<'
+	| '>'
+	| ','
+	| '.'
+	| '?'
+	| 'ε'
+	| ' ';
+OPERATORS: '-' | '+' | '=' | '/' | '%';
+SPECIAL_CHAR: '_' | '$';
+BOOLEAN: 'true' | 'false';
+OBJECT_INSTANCE: 'System.out';
 
 // PARSER
-program : statements ;
-statements : output_statement output_statement* ;
-output_statement : print_statement ';' ;
-print_statement :  OBJECT_INSTANCE  ( '.print(' expressions ')'
-                                    | '.println(' expressions? ')' 
-                                    | '.printf(' (format_string | variable) ( ',' format_arguments)?  ')' ) ;
+program: statements;
+statements: output_statement output_statement*;
+output_statement: print_statement ';';
+print_statement:
+	OBJECT_INSTANCE (
+		'.print(' expressions ')'
+		| '.println(' expressions? ')'
+		| '.printf(' (format_string | variable) (
+			',' format_arguments
+		)? ')'
+	);
 
 identifier_chars : LETTER | DIGIT | SPECIAL_CHAR ;
 floating_point_literal : (DIGIT DIGIT* '.' DIGIT* | DIGIT* '.' DIGIT DIGIT*) ;
