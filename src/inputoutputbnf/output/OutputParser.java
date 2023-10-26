@@ -23,8 +23,8 @@ public class OutputParser extends Parser {
 		T__24=25, T__25=26, T__26=27, T__27=28, T__28=29, T__29=30, T__30=31, 
 		T__31=32, T__32=33, T__33=34, T__34=35, T__35=36, T__36=37, T__37=38, 
 		T__38=39, T__39=40, T__40=41, T__41=42, T__42=43, T__43=44, T__44=45, 
-		DIGIT=46, LETTER=47, SYMBOL=48, OPERATORS=49, SPECIAL_CHAR=50, BOOLEAN=51, 
-		OBJECT_INSTANCE=52;
+		T__45=46, DIGIT=47, LETTER=48, SYMBOL=49, OPERATORS=50, SPECIAL_CHAR=51, 
+		BOOLEAN=52, OBJECT_INSTANCE=53;
 	public static final int
 		RULE_program = 0, RULE_statements = 1, RULE_output_statement = 2, RULE_print_statement = 3, 
 		RULE_identifier_chars = 4, RULE_floating_point_literal = 5, RULE_integer_literal = 6, 
@@ -49,9 +49,9 @@ public class OutputParser extends Parser {
 			null, "';'", "'.print('", "')'", "'.println('", "'.printf('", "','", 
 			"'.'", "'~'", "'!'", "'@'", "'#'", "'$'", "'^'", "'&'", "'*'", "'('", 
 			"'_'", "'{'", "'}'", "'['", "']'", "'|'", "'\\'", "':'", "'\"'", "'''", 
-			"'<'", "'>'", "'?'", "'\\u03B5'", "' '", "'%'", "'+'", "'-'", "'/'", 
-			"'()'", "'%s'", "'%S'", "'%c'", "'%C'", "'%b'", "'%B'", "'%d'", "'%f'", 
-			"'%n'", null, null, null, null, null, null, "'System.out'"
+			"'<'", "'>'", "'?'", "'\\u03B5'", "' '", "'-'", "'+'", "'='", "'/'", 
+			"'%'", "'()'", "'%s'", "'%S'", "'%c'", "'%C'", "'%b'", "'%B'", "'%d'", 
+			"'%f'", "'%n'", null, null, null, null, null, null, "'System.out'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
@@ -60,7 +60,7 @@ public class OutputParser extends Parser {
 			null, null, null, null, null, null, null, null, null, null, null, null, 
 			null, null, null, null, null, null, null, null, null, null, null, null, 
 			null, null, null, null, null, null, null, null, null, null, null, null, 
-			null, null, null, null, null, null, null, null, null, null, "DIGIT", 
+			null, null, null, null, null, null, null, null, null, null, null, "DIGIT", 
 			"LETTER", "SYMBOL", "OPERATORS", "SPECIAL_CHAR", "BOOLEAN", "OBJECT_INSTANCE"
 		};
 	}
@@ -333,7 +333,7 @@ public class OutputParser extends Parser {
 				setState(63);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 3588823233659520L) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 7177616301818496L) != 0)) {
 					{
 					setState(62);
 					expressions();
@@ -432,7 +432,7 @@ public class OutputParser extends Parser {
 			{
 			setState(79);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 1337006139375616L) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 2674012278751232L) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -689,7 +689,7 @@ public class OutputParser extends Parser {
 			setState(122);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 1337006139375616L) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 2674012278751232L) != 0)) {
 				{
 				{
 				setState(119);
@@ -747,7 +747,7 @@ public class OutputParser extends Parser {
 			{
 			setState(125);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 1055535457632202L) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 2111066620297162L) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -942,7 +942,7 @@ public class OutputParser extends Parser {
 					{
 					setState(143);
 					_la = _input.LA(1);
-					if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 211114780524490L) != 0)) ) {
+					if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 422349862076362L) != 0)) ) {
 					_errHandler.recoverInline(this);
 					}
 					else {
@@ -1009,7 +1009,7 @@ public class OutputParser extends Parser {
 			setState(150);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 211114780524490L) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & 422349862076362L) != 0)) {
 				{
 				setState(149);
 				string();
@@ -1289,10 +1289,10 @@ public class OutputParser extends Parser {
 			setState(186);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (_la==T__33) {
+			if (_la==T__31) {
 				{
 				setState(185);
-				match(T__33);
+				match(T__31);
 				}
 			}
 
@@ -1379,7 +1379,7 @@ public class OutputParser extends Parser {
 				case 1:
 					{
 					setState(193);
-					match(T__33);
+					match(T__31);
 					}
 					break;
 				}
@@ -1397,7 +1397,7 @@ public class OutputParser extends Parser {
 					}
 					break;
 				case T__6:
-				case T__33:
+				case T__31:
 				case DIGIT:
 				case LETTER:
 				case SPECIAL_CHAR:
@@ -1418,7 +1418,7 @@ public class OutputParser extends Parser {
 						{
 						setState(203);
 						_la = _input.LA(1);
-						if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 64424542208L) != 0)) ) {
+						if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 115964149760L) != 0)) ) {
 						_errHandler.recoverInline(this);
 						}
 						else {
@@ -1430,7 +1430,7 @@ public class OutputParser extends Parser {
 						_errHandler.sync(this);
 						switch (_input.LA(1)) {
 						case T__6:
-						case T__33:
+						case T__31:
 						case DIGIT:
 						case LETTER:
 						case SPECIAL_CHAR:
@@ -1522,7 +1522,7 @@ public class OutputParser extends Parser {
 			setState(222);
 			variable();
 			setState(223);
-			match(T__35);
+			match(T__36);
 			setState(230);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,27,_ctx);
@@ -1535,7 +1535,7 @@ public class OutputParser extends Parser {
 					setState(225);
 					variable();
 					setState(226);
-					match(T__35);
+					match(T__36);
 					}
 					} 
 				}
@@ -1825,7 +1825,7 @@ public class OutputParser extends Parser {
 			setState(283);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 281346085748682L) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 562812472524746L) != 0)) {
 				{
 				setState(281);
 				_errHandler.sync(this);
@@ -1841,66 +1841,66 @@ public class OutputParser extends Parser {
 					setState(279);
 					_errHandler.sync(this);
 					switch (_input.LA(1)) {
-					case T__36:
-						{
-						setState(268);
-						match(T__36);
-						}
-						break;
 					case T__37:
 						{
-						setState(269);
+						setState(268);
 						match(T__37);
 						}
 						break;
 					case T__38:
 						{
-						setState(270);
+						setState(269);
 						match(T__38);
 						}
 						break;
 					case T__39:
 						{
-						setState(271);
+						setState(270);
 						match(T__39);
 						}
 						break;
 					case T__40:
 						{
-						setState(272);
+						setState(271);
 						match(T__40);
 						}
 						break;
 					case T__41:
 						{
-						setState(273);
+						setState(272);
 						match(T__41);
 						}
 						break;
 					case T__42:
 						{
-						setState(274);
+						setState(273);
 						match(T__42);
 						}
 						break;
 					case T__43:
 						{
-						setState(275);
+						setState(274);
 						match(T__43);
-						}
-						break;
-					case T__31:
-						{
-						setState(276);
-						match(T__31);
-						setState(277);
-						floating_point_literal();
 						}
 						break;
 					case T__44:
 						{
-						setState(278);
+						setState(275);
 						match(T__44);
+						}
+						break;
+					case T__35:
+						{
+						setState(276);
+						match(T__35);
+						setState(277);
+						floating_point_literal();
+						}
+						break;
+					case T__45:
+						{
+						setState(278);
+						match(T__45);
 						}
 						break;
 					default:
@@ -1930,7 +1930,7 @@ public class OutputParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u00014\u0121\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
+		"\u0004\u00015\u0121\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
 		"\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004\u0002"+
 		"\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007\u0007\u0007\u0002"+
 		"\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0002\u000b\u0007\u000b\u0002"+
@@ -1975,10 +1975,10 @@ public class OutputParser extends Parser {
 		"\u0015\u0001\u0015\u0003\u0015\u0118\b\u0015\u0005\u0015\u011a\b\u0015"+
 		"\n\u0015\f\u0015\u011d\t\u0015\u0001\u0015\u0001\u0015\u0001\u0015\u0000"+
 		"\u0000\u0016\u0000\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014\u0016"+
-		"\u0018\u001a\u001c\u001e \"$&(*\u0000\u0005\u0002\u0000./22\u0002\u0000"+
-		"//22\u0004\u0000\u0001\u0001\u0003\u0003\u0006\u001f.1\u0006\u0000\u0001"+
-		"\u0001\u0003\u0003\u0006\u0016\u0018\u0018\u001a ./\u0002\u0000\u000f"+
-		"\u000f #\u013d\u0000,\u0001\u0000\u0000\u0000\u0002.\u0001\u0000\u0000"+
+		"\u0018\u001a\u001c\u001e \"$&(*\u0000\u0005\u0002\u0000/033\u0002\u0000"+
+		"0033\u0004\u0000\u0001\u0001\u0003\u0003\u0006\u001f/2\u0006\u0000\u0001"+
+		"\u0001\u0003\u0003\u0006\u0016\u0018\u0018\u001a$/0\u0003\u0000\u000f"+
+		"\u000f !#$\u013d\u0000,\u0001\u0000\u0000\u0000\u0002.\u0001\u0000\u0000"+
 		"\u0000\u00045\u0001\u0000\u0000\u0000\u00068\u0001\u0000\u0000\u0000\b"+
 		"O\u0001\u0000\u0000\u0000\nm\u0001\u0000\u0000\u0000\fo\u0001\u0000\u0000"+
 		"\u0000\u000ev\u0001\u0000\u0000\u0000\u0010}\u0001\u0000\u0000\u0000\u0012"+
@@ -1993,7 +1993,7 @@ public class OutputParser extends Parser {
 		"\u0000\u0000\u000020\u0001\u0000\u0000\u000023\u0001\u0000\u0000\u0000"+
 		"3\u0003\u0001\u0000\u0000\u000042\u0001\u0000\u0000\u000056\u0003\u0006"+
 		"\u0003\u000067\u0005\u0001\u0000\u00007\u0005\u0001\u0000\u0000\u0000"+
-		"8M\u00054\u0000\u00009:\u0005\u0002\u0000\u0000:;\u0003&\u0013\u0000;"+
+		"8M\u00055\u0000\u00009:\u0005\u0002\u0000\u0000:;\u0003&\u0013\u0000;"+
 		"<\u0005\u0003\u0000\u0000<N\u0001\u0000\u0000\u0000=?\u0005\u0004\u0000"+
 		"\u0000>@\u0003&\u0013\u0000?>\u0001\u0000\u0000\u0000?@\u0001\u0000\u0000"+
 		"\u0000@A\u0001\u0000\u0000\u0000AN\u0005\u0003\u0000\u0000BE\u0005\u0005"+
@@ -2003,20 +2003,20 @@ public class OutputParser extends Parser {
 		"\u0000\u0000\u0000JK\u0001\u0000\u0000\u0000KL\u0005\u0003\u0000\u0000"+
 		"LN\u0001\u0000\u0000\u0000M9\u0001\u0000\u0000\u0000M=\u0001\u0000\u0000"+
 		"\u0000MB\u0001\u0000\u0000\u0000N\u0007\u0001\u0000\u0000\u0000OP\u0007"+
-		"\u0000\u0000\u0000P\t\u0001\u0000\u0000\u0000QU\u0005.\u0000\u0000RT\u0005"+
-		".\u0000\u0000SR\u0001\u0000\u0000\u0000TW\u0001\u0000\u0000\u0000US\u0001"+
+		"\u0000\u0000\u0000P\t\u0001\u0000\u0000\u0000QU\u0005/\u0000\u0000RT\u0005"+
+		"/\u0000\u0000SR\u0001\u0000\u0000\u0000TW\u0001\u0000\u0000\u0000US\u0001"+
 		"\u0000\u0000\u0000UV\u0001\u0000\u0000\u0000VX\u0001\u0000\u0000\u0000"+
-		"WU\u0001\u0000\u0000\u0000X\\\u0005\u0007\u0000\u0000Y[\u0005.\u0000\u0000"+
+		"WU\u0001\u0000\u0000\u0000X\\\u0005\u0007\u0000\u0000Y[\u0005/\u0000\u0000"+
 		"ZY\u0001\u0000\u0000\u0000[^\u0001\u0000\u0000\u0000\\Z\u0001\u0000\u0000"+
 		"\u0000\\]\u0001\u0000\u0000\u0000]n\u0001\u0000\u0000\u0000^\\\u0001\u0000"+
-		"\u0000\u0000_a\u0005.\u0000\u0000`_\u0001\u0000\u0000\u0000ad\u0001\u0000"+
+		"\u0000\u0000_a\u0005/\u0000\u0000`_\u0001\u0000\u0000\u0000ad\u0001\u0000"+
 		"\u0000\u0000b`\u0001\u0000\u0000\u0000bc\u0001\u0000\u0000\u0000ce\u0001"+
 		"\u0000\u0000\u0000db\u0001\u0000\u0000\u0000ef\u0005\u0007\u0000\u0000"+
-		"fj\u0005.\u0000\u0000gi\u0005.\u0000\u0000hg\u0001\u0000\u0000\u0000i"+
+		"fj\u0005/\u0000\u0000gi\u0005/\u0000\u0000hg\u0001\u0000\u0000\u0000i"+
 		"l\u0001\u0000\u0000\u0000jh\u0001\u0000\u0000\u0000jk\u0001\u0000\u0000"+
 		"\u0000kn\u0001\u0000\u0000\u0000lj\u0001\u0000\u0000\u0000mQ\u0001\u0000"+
 		"\u0000\u0000mb\u0001\u0000\u0000\u0000n\u000b\u0001\u0000\u0000\u0000"+
-		"os\u0005.\u0000\u0000pr\u0005.\u0000\u0000qp\u0001\u0000\u0000\u0000r"+
+		"os\u0005/\u0000\u0000pr\u0005/\u0000\u0000qp\u0001\u0000\u0000\u0000r"+
 		"u\u0001\u0000\u0000\u0000sq\u0001\u0000\u0000\u0000st\u0001\u0000\u0000"+
 		"\u0000t\r\u0001\u0000\u0000\u0000us\u0001\u0000\u0000\u0000vz\u0007\u0001"+
 		"\u0000\u0000wy\u0003\b\u0004\u0000xw\u0001\u0000\u0000\u0000y|\u0001\u0000"+
@@ -2028,8 +2028,8 @@ public class OutputParser extends Parser {
 		"\u0001\u0000\u0000\u0000\u0085\u0088\u0001\u0000\u0000\u0000\u0086\u0084"+
 		"\u0001\u0000\u0000\u0000\u0086\u0087\u0001\u0000\u0000\u0000\u0087\u008d"+
 		"\u0001\u0000\u0000\u0000\u0088\u0086\u0001\u0000\u0000\u0000\u0089\u008a"+
-		"\u0005\u0010\u0000\u0000\u008a\u008b\u00053\u0000\u0000\u008b\u008e\u0005"+
-		"\u0003\u0000\u0000\u008c\u008e\u00053\u0000\u0000\u008d\u0089\u0001\u0000"+
+		"\u0005\u0010\u0000\u0000\u008a\u008b\u00054\u0000\u0000\u008b\u008e\u0005"+
+		"\u0003\u0000\u0000\u008c\u008e\u00054\u0000\u0000\u008d\u0089\u0001\u0000"+
 		"\u0000\u0000\u008d\u008c\u0001\u0000\u0000\u0000\u008e\u0015\u0001\u0000"+
 		"\u0000\u0000\u008f\u0091\u0007\u0003\u0000\u0000\u0090\u008f\u0001\u0000"+
 		"\u0000\u0000\u0091\u0092\u0001\u0000\u0000\u0000\u0092\u0090\u0001\u0000"+
@@ -2057,12 +2057,12 @@ public class OutputParser extends Parser {
 		"\u0000\u00b7\u00b2\u0001\u0000\u0000\u0000\u00b7\u00b3\u0001\u0000\u0000"+
 		"\u0000\u00b7\u00b4\u0001\u0000\u0000\u0000\u00b7\u00b5\u0001\u0000\u0000"+
 		"\u0000\u00b7\u00b6\u0001\u0000\u0000\u0000\u00b8\u001d\u0001\u0000\u0000"+
-		"\u0000\u00b9\u00bb\u0005\"\u0000\u0000\u00ba\u00b9\u0001\u0000\u0000\u0000"+
+		"\u0000\u00b9\u00bb\u0005 \u0000\u0000\u00ba\u00b9\u0001\u0000\u0000\u0000"+
 		"\u00ba\u00bb\u0001\u0000\u0000\u0000\u00bb\u00bf\u0001\u0000\u0000\u0000"+
 		"\u00bc\u00c0\u0003\f\u0006\u0000\u00bd\u00c0\u0003\n\u0005\u0000\u00be"+
 		"\u00c0\u0003\u000e\u0007\u0000\u00bf\u00bc\u0001\u0000\u0000\u0000\u00bf"+
 		"\u00bd\u0001\u0000\u0000\u0000\u00bf\u00be\u0001\u0000\u0000\u0000\u00c0"+
-		"\u001f\u0001\u0000\u0000\u0000\u00c1\u00c3\u0005\"\u0000\u0000\u00c2\u00c1"+
+		"\u001f\u0001\u0000\u0000\u0000\u00c1\u00c3\u0005 \u0000\u0000\u00c2\u00c1"+
 		"\u0001\u0000\u0000\u0000\u00c2\u00c3\u0001\u0000\u0000\u0000\u00c3\u00c9"+
 		"\u0001\u0000\u0000\u0000\u00c4\u00c5\u0005\u0010\u0000\u0000\u00c5\u00c6"+
 		"\u0003\u001e\u000f\u0000\u00c6\u00c7\u0005\u0003\u0000\u0000\u00c7\u00ca"+
@@ -2079,9 +2079,9 @@ public class OutputParser extends Parser {
 		"\u0005\u0010\u0000\u0000\u00d9\u00da\u0003 \u0010\u0000\u00da\u00db\u0005"+
 		"\u0003\u0000\u0000\u00db\u00dd\u0001\u0000\u0000\u0000\u00dc\u00c2\u0001"+
 		"\u0000\u0000\u0000\u00dc\u00d8\u0001\u0000\u0000\u0000\u00dd!\u0001\u0000"+
-		"\u0000\u0000\u00de\u00df\u0003\u000e\u0007\u0000\u00df\u00e6\u0005$\u0000"+
+		"\u0000\u0000\u00de\u00df\u0003\u000e\u0007\u0000\u00df\u00e6\u0005%\u0000"+
 		"\u0000\u00e0\u00e1\u0005!\u0000\u0000\u00e1\u00e2\u0003\u000e\u0007\u0000"+
-		"\u00e2\u00e3\u0005$\u0000\u0000\u00e3\u00e5\u0001\u0000\u0000\u0000\u00e4"+
+		"\u00e2\u00e3\u0005%\u0000\u0000\u00e3\u00e5\u0001\u0000\u0000\u0000\u00e4"+
 		"\u00e0\u0001\u0000\u0000\u0000\u00e5\u00e8\u0001\u0000\u0000\u0000\u00e6"+
 		"\u00e4\u0001\u0000\u0000\u0000\u00e6\u00e7\u0001\u0000\u0000\u0000\u00e7"+
 		"#\u0001\u0000\u0000\u0000\u00e8\u00e6\u0001\u0000\u0000\u0000\u00e9\u00ea"+
@@ -2104,11 +2104,11 @@ public class OutputParser extends Parser {
 		"\u0000\u0000\u0107\u0105\u0001\u0000\u0000\u0000\u0107\u0108\u0001\u0000"+
 		"\u0000\u0000\u0108)\u0001\u0000\u0000\u0000\u0109\u0107\u0001\u0000\u0000"+
 		"\u0000\u010a\u011b\u0005\u0019\u0000\u0000\u010b\u011a\u0003\u0016\u000b"+
-		"\u0000\u010c\u0118\u0005%\u0000\u0000\u010d\u0118\u0005&\u0000\u0000\u010e"+
-		"\u0118\u0005\'\u0000\u0000\u010f\u0118\u0005(\u0000\u0000\u0110\u0118"+
-		"\u0005)\u0000\u0000\u0111\u0118\u0005*\u0000\u0000\u0112\u0118\u0005+"+
-		"\u0000\u0000\u0113\u0118\u0005,\u0000\u0000\u0114\u0115\u0005 \u0000\u0000"+
-		"\u0115\u0118\u0003\n\u0005\u0000\u0116\u0118\u0005-\u0000\u0000\u0117"+
+		"\u0000\u010c\u0118\u0005&\u0000\u0000\u010d\u0118\u0005\'\u0000\u0000"+
+		"\u010e\u0118\u0005(\u0000\u0000\u010f\u0118\u0005)\u0000\u0000\u0110\u0118"+
+		"\u0005*\u0000\u0000\u0111\u0118\u0005+\u0000\u0000\u0112\u0118\u0005,"+
+		"\u0000\u0000\u0113\u0118\u0005-\u0000\u0000\u0114\u0115\u0005$\u0000\u0000"+
+		"\u0115\u0118\u0003\n\u0005\u0000\u0116\u0118\u0005.\u0000\u0000\u0117"+
 		"\u010c\u0001\u0000\u0000\u0000\u0117\u010d\u0001\u0000\u0000\u0000\u0117"+
 		"\u010e\u0001\u0000\u0000\u0000\u0117\u010f\u0001\u0000\u0000\u0000\u0117"+
 		"\u0110\u0001\u0000\u0000\u0000\u0117\u0111\u0001\u0000\u0000\u0000\u0117"+

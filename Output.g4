@@ -24,7 +24,7 @@ variable : (LETTER | SPECIAL_CHAR) identifier_chars* ;
 character : LETTER | SYMBOL | DIGIT | OPERATORS | '~' | '!' | '@' | '#' | '$' | '^' | '&' | '*' | '(' | ')' | '_' | '{' | '}' | '[' | ']' | '|' | '\\' | ':' | ';' | '"' | '\'' | '<' | '>' | ',' | '.' | '?' | 'ε' | ' ';
 character_literal : '\'' character '\'' ;
 boolean_literal : '!'* ('(' BOOLEAN ')' | BOOLEAN) ;
-string : (DIGIT | LETTER | '%' | '~' | '!' | '@' | '#' | '$' | '^' | '&' | '*' | '(' | ')' | '_' | '{' | '}' | '[' | ']' | '|' | ':' | ';' | '\'' | '<' | '>' | ',' | '.' | '?' | 'ε' | ' ')+ ;
+string : (DIGIT | LETTER |'-' | '+' | '=' | '/' | '%' | '~' | '!' | '@' | '#' | '$' | '^' | '&' | '*' | '(' | ')' | '_' | '{' | '}' | '[' | ']' | '|' | ':' | ';' | '\'' | '<' | '>' | ',' | '.' | '?' | 'ε' | ' ')+ ;
 string_content : '"' string? '"' ;
 string_literal : (primary_expression '+')*  string_content  ('+' primary_expression)* | '(' string_literal ')';
 primary_expression : variable | boolean_literal | character_literal | method_statement | arithmetic_operations | array_index | string_content  ;
