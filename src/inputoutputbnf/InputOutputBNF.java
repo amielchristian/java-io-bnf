@@ -55,12 +55,21 @@ public class InputOutputBNF {
         InputParser parser = new InputParser(tokens);
         ParseTree tree = parser.input_statement();
 
+        Boolean valid = str.contains("\\V");
+        str = str.replace("\\V","");
+        
         String msg = "";
         if (parser.getNumberOfSyntaxErrors() == 0)  {
-            msg = "Covered. ";
+            msg = "Covered by the BNF grammar. ";
+            if (!valid)
+                msg += "\n" + "But the syntax is invalid in Java.";
+            
         }
         else    {
-            msg = "Not covered. ";
+            msg = "Not covered by the BNF grammar. ";
+            if (valid)
+                msg += "\n" + "But the syntax is valid in Java.";
+            
         }
         return msg;
     }

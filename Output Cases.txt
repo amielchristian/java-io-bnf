@@ -43,4 +43,5 @@ System.out.print(123var);
 System.out.print( #var);
 System.out.println(var * * var);
 System.out.println(var ++ var);
-System.out.println(99 / /var);
+System.out.println(99 / /var
+System.out.print((h)); //unrecognized if string yung h
